@@ -2,9 +2,11 @@
 
 ## Description
 
-Small towns have a lot to love. If small towns are going to thrive on their own terms, they need a way to promote themselves. Local festivals need to be on a visible calendar. Family-owned hotels and street taco stands need to be marketed to travelers. Every fisherman who is ready to take tourists to see the beauty of their coast needs a way that visitors can find them. Community providers need a way to connect with passionate travelers, who seek the authenticity of the community they are visiting.
+Small towns have a lot to love. If small towns are going to thrive on their own terms, they need a way to promote themselves. Community providers need a way to connect with passionate travelers, who seek the authenticity of the community they are visiting. Local festivals need to be on a public calendar. Family-owned hotels and street taco stands need to be marketed to travelers. Every fisherman who is ready to take tourists to see the beauty of their coast needs a way that visitors can find them.
 
-Enter GreenTrail! A web application designed to help users explore communities and for locals to manage local services, providers, and locations. The more people add their businesses and local favorites to a community page, the more interesting the community becomes to travelers. The application is built with Node.js, Express.js, Sequelize, Passport, Google OAuth 2.0, and Handlebars.
+GreenTrail is a web application designed to help users explore communities and for locals to manage local services, providers, and locations. The more people add their businesses and local favorites to a community page, the more interesting the community becomes to travelers. The application is built with Node.js, Express.js, Sequelize, Passport, Google OAuth 2.0, and Handlebars.
+
+[Original repository](https://github.com/crestonesoftware/greentrail)
 
 ## Installation
 
