@@ -1,0 +1,35 @@
+<a class="grotesque dark hidden" id="nav-title">GreenTrail</a>
+<p></p>
+
+{{! NAV MENU }}
+<nav class="inter light">
+  <i class="fa-solid fa-bars hidden fade-in" id="hamburger-menu"></i>
+  <i class="fa-solid fa-x hidden" id="close-menu"></i>
+  <div id="nav-links">
+    <a href="/locations">Locations</a>
+    {{#if loggedIn}}
+      <a href="/add">Add</a>
+      <a href="/" id="logout">Logout</a>
+      {{! JAVASCRIPT }}
+      <script src="/js/logout.js"></script>
+    {{else}}
+      <a href="/login" id="login">Login</a>
+    {{/if}}
+  </div>
+</nav>
+
+{{! HAMBURGER MENU }}
+<div class="hidden fade-in-quick light inter" id="nav-display">
+  <div id="nav-display-inner">
+    <a href="/locations" class="fade-in">Locations</a>
+    {{#if loggedIn}}
+      <a href="/add" class="fade-in">Add</a>
+      <a href="/" class="fade-in" id="logout">Logout</a>
+    {{else}}
+      <a href="/login" class="fade-in" id="login">Login</a>
+    {{/if}}
+  </div>
+</div>
+
+{{! JAVASCRIPT }}
+<script src="/js/hamburger-menu.js"></script>

@@ -1,0 +1,54 @@
+<div class="modal" tabindex="-1" id="addStayModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add Lodging for community: <select name="stayCommunity" id="stayCommunityInput" ></h5>
+              <option value="1">Chacala</option>
+            </select>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body container add-modal-body">
+        <div class="row">
+          <div class="col-5">Lodging Name</div>
+          <div class="col-5">Type of Lodging Offered</div>
+          <div class="col-5 border">
+            <input
+              type="text"
+              name="stayNameInput"
+              id="stayNameInput"
+            />
+          </div>
+          <div class="col-5">
+            <select name="stayType" id="stayTypeInput" class="border">
+              <option value="">B&B</option>
+              <option value="">Home Stay</option>
+              <option value="">Hotel</option>
+              <option value="">Resort</option>
+              <option value="">Retreat Center</option>
+              <option value="">Rental - House</option>
+              <option value="">Rental - Apartment</option>
+            </select>
+          </div>
+          <div class="col-10">Description</div>
+          <div class="col-10 border">
+            <textarea
+              name="stayDescriptionInput"
+              cols="44"
+              id="stayDescriptionInput"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" data-bs-dismiss="modal" class="btn btn-outline-dark" id="saveNewStayProviderBtn">
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

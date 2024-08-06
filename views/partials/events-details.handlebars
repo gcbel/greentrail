@@ -1,0 +1,32 @@
+<section>
+  <h2 class="grotesque page-subtitle feature-title">Events in
+    {{community.community_name}}</h2>
+  <div class="large-com-features-div">
+    {{#each community.events as |event|}}
+      {{#ifvalue event.category value="event"}}
+        <div class="borders stay-div large-com-features">
+          <h3>{{event.event_name}}</h3>
+          <h4><i class="fa-regular fa-calendar"></i> {{event.date}}</h4>
+          <p>{{event.description}}</p>
+          <h4><i class="fa-solid fa-location-dot"></i><a
+              href="{{event.site.map_link}}"
+              class="map-link"
+            >{{event.site.street_address}}</a></h4>
+        </div>
+      {{/ifvalue}}
+    {{/each}}
+    {{#each events.eventseries as |series|}}
+      {{#ifvalue series.category value="event series"}}
+        <div class="borders stay-div large-com-features">
+          <h3>{{series.event_series_name}}</h3>
+          <h4><i class="fa-regular fa-calendar"></i> {{series.date}}</h4>
+          <p>{{series.description}}</p>
+          <h4><i class="fa-solid fa-location-dot"></i><a
+              target="_blank" href="{{series.site.map_link}}"
+              class="map-link"
+            >{{series.site.street_address}}</a></h4>
+        </div>
+      {{/ifvalue}}
+    {{/each}}
+  </div>
+</section>

@@ -1,0 +1,67 @@
+<h1 class="page-title grotesque" id="location-title">Where to next?</h1>
+
+<div class="page">
+  <h2 class="grotesque location-subtitle" id="featured-title">Featured Location:</h2>
+  <section class="borders" id="featured">
+    <h2 class="grotesque" id="featured-name">Chacala, Mexico</h2>
+    <div id="featured-content">
+      <img
+        src="/images/chacala-turtle.jpg"
+        class="featured-elem"
+        id="featured-img-turtle"
+        alt="Turtle in clear water"
+      />
+      <div>
+        <img
+          src="/images/chacala.jpg"
+          id="featured-img-aerial"
+          class="featured-elem"
+          alt="Aerial view of Chacala"
+        />
+        <div id="featured-content-inner">
+          <a href="/community/Chacala" class="borders inter featured-elem" id="see-more">See more</a>
+          <video autoplay muted loop class="featured-elem" id="featured-video">
+            <source
+              src="/images/chacala.mp4"
+              type="video/mp4"
+              alt="Video of children swimming in the water"
+            />
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <h2 class="grotesque location-subtitle" id="locations-title">All Locations:</h2>
+  <section class="borders" id="locations">
+    {{#each countries as |country|}}
+      <h2 class="grotesque country-name">{{country.country_name}}<i class="fa-solid fa-angle-down toggle-icon"></i></h2>
+
+      <div class="hidden">
+        {{#each country.provinces as |province|}}
+          <h3 class="grotesque province-name">{{province.province_name}}</h3>
+          {{#each province.towns as |town|}}
+            {{#ifvalue town.town_name value="Chacala"}}
+              <ul class="town-name">
+                <li><a
+                    class="inter"
+                    href="/community/{{town.town_name}}"
+                  >{{town.town_name}}</a></li>
+              </ul>
+            {{else}}
+              <ul class="town-name">
+                <li><a
+                    class="inter"
+                    href="/community"
+                  >{{town.town_name}}</a></li>
+              </ul>
+            {{/ifvalue}}
+          {{/each}}
+        {{/each}}
+      </div>
+    {{/each}}
+  </section>
+<div>
+
+{{! JAVASCRIPT }}
+<script src="/js/locations.js"></script>

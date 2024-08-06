@@ -1,0 +1,64 @@
+{{! BOOSTRAP CSS }}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<h1 class="page-title grotesque" id="add-title">Add to a community</h1>
+
+<section class="borders page" id="add-div">
+  <div class="add-outer-div">
+    <div class="add-inner-div">
+      <h2 class="grotesque">Lodging</h2>
+      <a class="add-img" data-bs-toggle="modal" data-bs-target="#addStayModal">
+        <img
+          src='/images/hotel-pura-chacala.jpg'
+          class="borders"
+          alt="Facade of a hotel"
+        />
+      </a>
+      {{!-- add Provider-Stay --}}
+      {{> addProvider/modalAddStay}}
+    </div>
+    <div class="add-inner-div">
+      <h2 class="grotesque">Restaurant</h2>
+      <a class="add-img" data-bs-toggle="modal" data-bs-target="#addEatModal">
+        <img
+          src='/images/tacos.jpeg'
+          class="borders"
+          alt="Tacos on a wooden board"
+        />
+      </a>
+      {{!-- add Provider-Eat --}}
+      {{> addProvider/modalAddEat}}
+    </div>
+  </div>
+  <div class="add-outer-div">
+    <div class="add-inner-div">
+      <h2 class="grotesque">Activity</h2>
+      <a class="add-img" data-bs-toggle="modal" data-bs-target="#addExploreModal">
+        <img
+          src="/images/hiking.jpg"
+          class="borders"
+          alt="Person with binoculars watching a flock of birds flying at sunset"
+        />
+      </a>
+      {{!-- add Provider-Stay --}}
+      {{> addProvider/modalAddExplore}}
+    </div>
+    <div class="add-inner-div">
+      <h2 class="grotesque">Service</h2>
+      <a class="add-img" data-bs-toggle="modal" data-bs-target="#addServiceModal">
+        <img
+          src='/images/laundry.jpg'
+          class="borders"
+          alt="Person holding folded laundry in a laundromat"
+        />
+      </a>
+      {{!-- add Provider-Eat --}}
+      {{> addProvider/modalAddService}}
+    </div>
+  </div>
+</section>
+        
+{{! BOOSTRAP JS }}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src='./js/add.js'></script>

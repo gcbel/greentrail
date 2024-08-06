@@ -1,0 +1,63 @@
+{{#if darkText}}
+<html lang="en-US" class="light-background">
+{{else}}
+<html lang="en-US" class="dark-background">
+{{/if}}
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenTrail</title>
+
+    {{! ICONS }}
+    <script
+      src="https://kit.fontawesome.com/443d45a2cf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="images/logo.png">
+
+    {{! FONTS }}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    {{! STYLES }}
+    <link rel="stylesheet" href="/css/output.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/pages.css" />
+    <link rel="stylesheet" href="/css/detail-pages.css" />
+    <link rel="stylesheet" href="/css/effects.css" />
+  </head>
+
+  <body>
+    <header>
+      {{#if darkText}}
+        {{> darkNav}}
+      {{else}}
+        {{> lightNav}}
+      {{/if}}
+    </header>
+
+    <main>
+      {{{body}}}
+    </main>
+
+    <footer id="contact">
+      {{#if darkText}}
+        <a href="https://github.com/crestonesoftware/greentrail" target="_blank"><i class="fa fa-github dark"></i></a>
+      {{else}}
+        <a href="https://github.com/crestonesoftware/greentrail" target="_blank"><i class="fa fa-github light"></i></a>
+      {{/if}}
+    </footer>
+  </body>
+</html>

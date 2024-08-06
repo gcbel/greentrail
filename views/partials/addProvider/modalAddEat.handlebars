@@ -1,0 +1,50 @@
+<div class="modal" tabindex="-1" id="addEatModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add a restaurant for community: <select name="eatCommunity" id="eatCommunityInput" ></h5>
+              <option value="1">Chacala</option>
+            </select>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body container">
+        <div class="row">
+          <div class="col-5">Restaurant Name</div>
+          <div class="col-5">Type of Restaurant</div>
+          <div class="col-5 border">
+            <input
+              type="text"
+              name="eatNameInput"
+              id="eatNameInput"
+            />
+          </div>
+          <div class="col-5">
+            <select name="eatType" id="eatTypeInput" class="border">
+              <option value="child-care">Coffee Shop</option>
+              <option value="ATM">Restaurant</option>
+              <option value="groceries">Street Vendor/Food Truck</option>
+            </select>
+          </div>
+          <div class="col-10">Description</div>
+          <div class="col-10 border">
+            <textarea
+              name="eatDescriptionInput"
+              cols="44"
+              id="eatDescriptionInput"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" data-bs-dismiss="modal" class="btn btn-outline-dark" id="saveNewEatProviderBtn">
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

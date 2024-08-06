@@ -1,0 +1,55 @@
+<div class="modal" tabindex="-1" id="addServiceModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add Service for community: <select name="serviceCommunity" id="serviceCommunityInput" ></h5>
+              <option value="1">Chacala</option>
+            </select>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body container">
+        <div class="row">
+          <div class="col-5">Service Name</div>
+          <div class="col-5">Type of Service Offered</div>
+          <div class="col-5 border">
+            <input
+              type="text"
+              name="serviceNameInput"
+              id="serviceNameInput"
+            />
+          </div>
+          <div class="col-5">
+            <select name="serviceType" id="serviceTypeInput" class="border">
+              <option value="ATM">ATM</option>
+              <option value="child-care">Child Care</option>
+              <option value="groceries">Groceries</option>
+              <option value="language-lessons">Language Lessons</option>
+              <option value="laundry">Laundry</option>
+              <option value="massage">Massage</option>
+              <option value="taxi">Taxi</option>
+              <option value="yoga-class">Yoga Class</option>
+            </select>
+          </div>
+          <div class="col-10">Description</div>
+          <div class="col-10 border">
+            <textarea
+              name="serviceDescriptionInput"
+              cols="44"
+              id="serviceDescriptionInput"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" data-bs-dismiss="modal" class="btn btn-outline-dark" id="saveNewServiceProviderBtn">
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

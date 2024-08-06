@@ -1,0 +1,19 @@
+<section>
+  <h2 class="grotesque page-subtitle feature-title">Local service providers in
+    {{community.community_name}}</h2>
+  <div class="small-com-features-div">
+    {{#each community.providers as |provider|}}
+      {{#ifvalue provider.service value="amenities"}}
+        <div class="borders stay-div small-com-features">
+          <h3>{{provider.provider_name}}</h3>
+          <p>{{provider.description}}</p>
+          <h4><i class="fa-solid fa-location-dot"></i>
+            <a
+              target="_blank" href="{{provider.site.map_link}}"
+              class="map-link"
+            >{{provider.site.street_address}}</a></h4>
+        </div>
+      {{/ifvalue}}
+    {{/each}}
+  </div>
+</section>

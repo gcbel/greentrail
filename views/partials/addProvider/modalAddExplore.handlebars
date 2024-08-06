@@ -1,0 +1,54 @@
+<div class="modal" tabindex="-1" id="addExploreModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add Experience for community: <select name="exploreCommunity" id="exploreCommunityInput" ></h5>
+              <option value="1">Chacala</option>
+            </select>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body container">
+        <div class="row">
+          <div class="col-5">Experience Name</div>
+          <div class="col-5">Type of Experience Offered</div>
+          <div class="col-5 border">
+            <input
+              type="text"
+              name="exploreNameInput"
+              id="exploreNameInput"
+            />
+          </div>
+          <div class="col-5">
+            <select name="exploreType" id="exploreTypeInput" class="border">
+              <option value="">Beach</option>
+              <option value="">Guide Service</option>
+              <option value="">Natural Beauty</option>
+              <option value="">Birdwatching</option>
+              <option value="">Boating</option>
+              <option value="">Dancing</option>
+              <option value="">Local History</option>
+            </select>
+          </div>
+          <div class="col-10">Description</div>
+          <div class="col-10 border">
+            <textarea
+              name="exploreDescriptionInput"
+              cols="44"
+              id="exploreDescriptionInput"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" data-bs-dismiss="modal" class="btn btn-outline-dark" id="saveNewExploreProviderBtn">
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
