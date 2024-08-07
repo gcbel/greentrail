@@ -8,7 +8,7 @@ GreenTrail is a web application designed to help users explore communities and f
 
 [Original repository](https://github.com/crestonesoftware/greentrail)
 
-![Image](./public/images/home.png)
+https://github.com/user-attachments/assets/7a119700-550b-4542-966a-289ceff4c1d9
 
 ## Installation
 
