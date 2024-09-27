@@ -16,7 +16,7 @@ N/A
 
 ## Usage
 
-The website can be visited at https://greentrail.onrender.com/ (website down temporarily). Please allow about a minute for the site to load, as periods of site inactivity cause slow connections to the website.
+The website is temporarily unavailable, but the repo can be cloned locally to see functionality.
 
 From the Home page, users can choose to navigate to a "Locations" page or a "Login" page.
 
