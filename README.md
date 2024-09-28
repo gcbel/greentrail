@@ -12,7 +12,7 @@ https://github.com/user-attachments/assets/7a119700-550b-4542-966a-289ceff4c1d9
 
 ## Installation
 
-N/A
+Clone the repository locally. Install dependencies with npm install. Configure environment variables as specified in the .env.EXAMPLE file in a .env file in the server folder. Run npm run dev to start the application.
 
 ## Usage
 
