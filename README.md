@@ -16,7 +16,7 @@ Clone the repository locally. Install dependencies with npm install. Configure e
 
 ## Usage
 
-The website is temporarily unavailable, but the repo can be cloned locally to see functionality.
+The website is temporarily unavailable, but the repo can be cloned locally to see functionality. See instructions above.
 
 From the Home page, users can choose to navigate to a "Locations" page or a "Login" page.
 
